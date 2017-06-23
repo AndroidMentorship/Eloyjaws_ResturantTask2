@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Resturantino</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="category_one">Local Meals</string>
+
+    <string name="category_two">All sorts of Rice</string>
+
+    <string name="category_three">Fast Food</string>
+
+    <string name="category_four">Drinks</string>
+
+    <string name="category_five">Desserts and snacks</string>
+
+    <string name="category_six">SeaFood</string>
+</resources>
