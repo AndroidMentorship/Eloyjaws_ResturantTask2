@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="Order Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,10 +19,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryMenuActivity" />
-        <activity android:name=".OrderMenuItemActivity" />
+        <activity
+            android:name=".OrderMenuItemActivity"
+            android:label="Item Description"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".OrderSummaryActivity" />
-        <activity android:name=".CategoryOneActivity"></activity>
-        <activity android:name=".CategoryTwoActivity"></activity>
+        <activity
+            android:name=".CategoryOneActivity"
+            android:label="@string/category_one"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CategoryTwoActivity"
+            android:label="@string/category_two"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ViewOrderSummaryActivity"></activity>
     </application>
 
 </manifest>

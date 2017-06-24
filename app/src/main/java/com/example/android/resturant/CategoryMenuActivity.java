@@ -11,6 +11,5 @@ public class CategoryMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category_menu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
     }
 }

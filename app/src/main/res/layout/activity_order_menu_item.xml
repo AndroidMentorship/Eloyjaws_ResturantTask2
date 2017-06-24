@@ -13,10 +13,33 @@
         tools:context="com.example.android.justjava.MainActivity">
 
         <ImageView
+            android:id="@+id/food_image"
             android:layout_width="164dp"
             android:layout_height="164dp"
             android:src="@mipmap/ic_launcher"
             android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Item: FoodItem"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Price: N900 per serving"
+                android:textSize="20sp"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -26,30 +49,11 @@
             android:text="With:"
             android:textAllCaps="true" />
 
-        <!--<CheckBox-->
-            <!--android:id="@+id/Fish_checkbox"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:text="Fish"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:id="@+id/chicken_checkbox"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Chicken"-->
-            <!--android:textSize="16sp"-->
-            <!--android:paddingLeft="24dp"/>-->
-
-        <!--<CheckBox-->
-            <!--android:id="@+id/beef_checkbox"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Beef"-->
-            <!--android:textSize="16sp"-->
-            <!--android:paddingLeft="24dp"/>-->
-
+        <EditText
+            android:id="@+id/extra_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -67,9 +71,10 @@
             android:layout_gravity="center_horizontal">
 
             <Button
+                android:id="@+id/decrement"
+                android:onClick="decrement"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="decrement"
                 android:text="-" />
 
             <TextView
@@ -83,15 +88,17 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/increment"
+                android:onClick="increment"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
                 android:text="+" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/addToOrderMenuButton"
+            android:onClick="addToOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add to Order Menu"
