@@ -59,26 +59,18 @@ public class CategoryOneActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 FoodItem currentItem = foodItems.get(i);
                 Intent intent = new Intent(CategoryOneActivity.this, OrderMenuItemActivity.class);
-//                intent.putExtra("itemName", currentItem.getItemName());
-//                intent.putExtra("itemPrice", ""+currentItem.getPrice());
-//                intent.putExtra("itemCategory",""+currentItem.getCategory());
-//                if (currentItem.hasImage()){
-//                    //pass image
-//                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.amala);
-//                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-//                    byte[] b = baos.toByteArray();
-//
-//                    intent.putExtra("foodPic", b);
-//                } else {
-//                    //pass default image
-//                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.amala);
-//                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-//                    byte[] b = baos.toByteArray();
-//
-//                    intent.putExtra("foodPic", b);
-//                }
+                intent.putExtra("itemName", currentItem.getItemName());
+                intent.putExtra("itemPrice", ""+currentItem.getPrice());
+                intent.putExtra("itemCategory",""+currentItem.getCategory());
+                if (currentItem.hasImage()){
+                    //pass image
+                    int imageId = currentItem.getImageResourceId();
+                    intent.putExtra("foodPic", imageId);
+                } else {
+                    //pass default image
+                    int imageId = R.drawable.amala;
+                    intent.putExtra("foodPic", imageId);
+                }
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(), "Item Clicked"+currentItem.getItemName(), Toast.LENGTH_SHORT).show();

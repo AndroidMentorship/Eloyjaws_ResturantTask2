@@ -98,7 +98,6 @@
 
         <Button
             android:id="@+id/addToOrderMenuButton"
-            android:onClick="addToOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add to Order Menu"

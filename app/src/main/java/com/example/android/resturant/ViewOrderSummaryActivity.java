@@ -20,10 +20,6 @@ public class ViewOrderSummaryActivity extends AppCompatActivity {
         final String itemName = extras.getString("itemName");
         final String itemPrice = extras.getString("itemPrice");
         final String itemCategory = extras.getString("itemCategory");
-
-        byte[] b = extras.getByteArray("picture");
-
-        Bitmap bmp = BitmapFactory.decodeByteArray(b, 0, b.length);
-
+        final int foodPic = extras.getInt("foodPic");
     }
 }

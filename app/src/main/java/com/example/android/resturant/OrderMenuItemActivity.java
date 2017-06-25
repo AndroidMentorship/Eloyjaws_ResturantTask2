@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
+import static android.R.attr.name;
 import static android.R.attr.value;
 import static android.R.id.message;
 
@@ -38,14 +40,10 @@ public class OrderMenuItemActivity extends AppCompatActivity {
             return;
         }
         final String itemName = extras.getString("itemName");
-        final String itemPrice = extras.getString("itemPrice");
+        final String itemPrice = extras.getString("itemPrice") + " Per Serving";
         final String itemCategory = extras.getString("itemCategory");
-
-        byte[] b = extras.getByteArray("foodPic");
-
-        Bitmap bmp = BitmapFactory.decodeByteArray(b, 0, b.length);
-
-        foodImage.setImageBitmap(bmp);
+        final int foodPic = extras.getInt("foodPic");
+        Log.i("OrderMenu Activity", "item cat: " + itemCategory);
 
         foodImage = (ImageView) findViewById(R.id.food_image);
         itemNameTextView = (TextView) findViewById(R.id.item_name);
@@ -60,8 +58,28 @@ public class OrderMenuItemActivity extends AppCompatActivity {
         //edit the layout
         itemNameTextView.setText(itemName);
         priceTextView.setText(itemPrice);
+        foodImage.setImageResource(foodPic);
 
+        /**
+         * This method is called when the order button is clicked.
+         */
+        addOrderNutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                userExtras = (EditText) findViewById(R.id.extra_text);
+                userExtrasValue = userExtras.getText().toString();
+                Intent intent = new Intent(OrderMenuItemActivity.this, ViewOrderSummaryActivity.class);
+                intent.putExtra("userExtras", userExtrasValue);
+                intent.putExtra("itemName", itemName);
+                intent.putExtra("itemPrice", itemPrice);
+                intent.putExtra("itemCategory", itemCategory);
+                intent.putExtra("foodpic", foodPic);
+
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Add to Order button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     /**
@@ -76,8 +94,8 @@ public class OrderMenuItemActivity extends AppCompatActivity {
      * This method is called when the decrement button is clicked.
      */
     public void decrement(View view) {
-        if (quantity <= 1){
-            String message = "You cannot order for one";
+        if (quantity <= 1) {
+            String message = "You cannot order for less than one serving";
             Toast alert = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT);
             alert.show();
             return;
@@ -85,11 +103,12 @@ public class OrderMenuItemActivity extends AppCompatActivity {
         quantity -= 1;
         displayQuantity(quantity);
     }
+
     /**
      * This method is called when the increment button is clicked.
      */
     public void increment(View view) {
-        if (quantity >= 15){
+        if (quantity >= 15) {
             String message = "Pls, contact us for orders above 15 servings";
             Toast alert = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT);
             alert.show();
@@ -99,28 +118,5 @@ public class OrderMenuItemActivity extends AppCompatActivity {
         displayQuantity(quantity);
     }
 
-    /**
-     * This method is called when the order button is clicked.
-     */
-    public void addToOrder(View view) {
-        userExtras = (EditText) findViewById(R.id.extra_text);
-        userExtrasValue = userExtras.getText().toString();
-        Toast.makeText(getApplicationContext(), "order btn clicked", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(OrderMenuItemActivity.this, ViewOrderSummaryActivity.class);
-//                intent.putExtra("userExtras",userExtrasValue);
-//                intent.putExtra("itemName", itemName);
-//                intent.putExtra("itemPrice", itemPrice);
-//                intent.putExtra("itemCategory", itemCategory);
-//
-//                Bitmap bitmap = ((BitmapDrawable) foodImage.getDrawable()).getBitmap();
-//                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//                bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-//                byte[] b = baos.toByteArray();
-//
-//                intent.putExtra("foodpic", b);
-//
-//                startActivity(intent);
-        Toast.makeText(getApplicationContext(), "Add to Order button clicked", Toast.LENGTH_SHORT).show();
-    }
 
 }
