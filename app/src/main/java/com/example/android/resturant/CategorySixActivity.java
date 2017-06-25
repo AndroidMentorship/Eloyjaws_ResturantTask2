@@ -1,18 +1,20 @@
 package com.example.android.resturant;
 
-        import android.content.Intent;
-        import android.support.v4.app.NavUtils;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.widget.AdapterView;
-        import android.widget.GridView;
-        import android.widget.Toast;
+import android.content.Intent;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.Toast;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-public class CategoryTwoActivity extends AppCompatActivity {
+public class CategorySixActivity extends AppCompatActivity {
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -25,18 +27,23 @@ public class CategoryTwoActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_two, menu);
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_view);
-        getSupportActionBar().setTitle(getString(R.string.category_two));
+        getSupportActionBar().setTitle(getString(R.string.category_six));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Jollof Rice", 2, 200, R.drawable.amala));
-        foodItems.add(new FoodItem("Fried Rice", 2, 200, R.drawable.amala));
-        foodItems.add(new FoodItem("Coconut Rice", 2, 500, R.drawable.amala));
-        foodItems.add(new FoodItem("White Rice", 2, 100, R.drawable.amala));
-        foodItems.add(new FoodItem("Rice Balls", 2, 50, R.drawable.amala));
+        foodItems.add(new FoodItem("Takoyaki", 1, 600, R.drawable.amala));
+        foodItems.add(new FoodItem("Calamari", 1, 700, R.mipmap.ic_launcher_round));
+        foodItems.add(new FoodItem("BBQ Fish", 1, 1500, R.drawable.amala));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 
@@ -49,7 +56,7 @@ public class CategoryTwoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 FoodItem currentItem = foodItems.get(i);
-                Intent intent = new Intent(CategoryTwoActivity.this, OrderMenuItemActivity.class);
+                Intent intent = new Intent(CategorySixActivity.this, OrderMenuItemActivity.class);
                 intent.putExtra("itemName", currentItem.getItemName());
                 intent.putExtra("itemPrice", ""+currentItem.getPrice());
                 intent.putExtra("itemCategory",""+currentItem.getCategory());
@@ -65,7 +72,6 @@ public class CategoryTwoActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(), "Item Clicked"+currentItem.getItemName(), Toast.LENGTH_SHORT).show();
-
 
             }
         });

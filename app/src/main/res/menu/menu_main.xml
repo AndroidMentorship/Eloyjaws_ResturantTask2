@@ -5,13 +5,13 @@
     <item
         android:id="@+id/cart"
         app:showAsAction="ifRoom|withText"
-        android:title="Order"
-        android:icon="@mipmap/ic_launcher">
+        android:title="Cart"
+        android:icon="@drawable/resturant2">
     </item>
     <item
         android:id="@+id/auth"
         app:showAsAction="ifRoom|withText"
-        android:title="User"
-        android:icon="@mipmap/ic_launcher">
+        android:title="Auth"
+        android:icon="@drawable/user2">
     </item>
 </menu>

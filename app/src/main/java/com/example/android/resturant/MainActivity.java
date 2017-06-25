@@ -50,7 +50,32 @@ public class MainActivity extends AppCompatActivity {
         categoryThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "You clicked category 3", Toast.LENGTH_SHORT).show();
+                Intent intent  = new Intent(MainActivity.this, CategoryThreeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        categoryFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(MainActivity.this, CategoryFourActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        categoryFive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(MainActivity.this, CategoryFiveActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        categorySix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(MainActivity.this, CategorySixActivity.class);
+                startActivity(intent);
             }
         });
     }

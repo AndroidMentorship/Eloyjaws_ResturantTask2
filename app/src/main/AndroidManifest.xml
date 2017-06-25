@@ -32,7 +32,25 @@
             android:name=".CategoryTwoActivity"
             android:label="@string/category_two"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ViewOrderSummaryActivity"></activity>
+        <activity
+            android:name=".ViewOrderSummaryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CategoryThreeActivity"
+            android:label="@string/category_three"
+            android:parentActivityName=".MainActivity"  />
+        <activity
+            android:name=".CategoryFourActivity"
+            android:label="@string/category_four"
+            android:parentActivityName=".MainActivity"  />
+        <activity
+            android:name=".CategoryFiveActivity"
+            android:label="@string/category_three"
+            android:parentActivityName=".MainActivity"  />
+        <activity
+            android:name=".CategorySixActivity"
+            android:label="@string/category_six"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
