@@ -3,13 +3,11 @@ package com.example.android.resturant;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class OrderSummaryActivity extends AppCompatActivity {
+public class SelectCheckoutOptionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order_summary);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        setContentView(R.layout.activity_select_checkout_option);
     }
 }
