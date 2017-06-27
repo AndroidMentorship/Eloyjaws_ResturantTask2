@@ -23,7 +23,6 @@
             android:name=".OrderMenuItemActivity"
             android:label="Item Description"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".OrderSummaryActivity" />
         <activity
             android:name=".CategoryOneActivity"
             android:label="@string/category_one"
@@ -34,23 +33,48 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ViewOrderSummaryActivity"
+            android:label="Order Summary"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CategoryThreeActivity"
             android:label="@string/category_three"
-            android:parentActivityName=".MainActivity"  />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CategoryFourActivity"
             android:label="@string/category_four"
-            android:parentActivityName=".MainActivity"  />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CategoryFiveActivity"
             android:label="@string/category_three"
-            android:parentActivityName=".MainActivity"  />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CategorySixActivity"
             android:label="@string/category_six"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AuthActivity"
+            android:label="User Information"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowOrderConfirmationActivity"
+            android:label=""
+            android:parentActivityName=".ShowOrderConfirmationActivity" />
+        <activity
+            android:name=".SelectCheckoutOptionActivity"
+            android:label="Checkout Options"
+            android:parentActivityName=".ViewOrderSummaryActivity" />
+        <activity
+            android:name=".ViewOrderConfirmationActivity"
+            android:label="Order Confirmation"
+            android:parentActivityName=".ViewOrderSummaryActivity" />
+        <activity
+            android:name=".DeliveryOptionActivity"
+            android:label="Delivery Info"
+            android:parentActivityName=".SelectCheckoutOptionActivity" />
+        <activity
+            android:name=".PickupActivity"
+            android:label=""
+            android:parentActivityName=".SelectCheckoutOptionActivity"/>
     </application>
 
 </manifest>

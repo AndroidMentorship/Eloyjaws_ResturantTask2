@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.resturant.PickupActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.resturant.ShowOrderConfirmationActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:text="Confirm"
+        android:textSize="42sp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingLeft="16dp"
+            android:background="#eef"
+            android:hint="Pls Enter Your Name"/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are You Sure You"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want To Pickup Your Order"
+        android:textSize="28sp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From The Resturant?"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

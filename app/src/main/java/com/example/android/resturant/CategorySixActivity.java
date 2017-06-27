@@ -42,7 +42,7 @@ public class CategorySixActivity extends AppCompatActivity {
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
         foodItems.add(new FoodItem("Takoyaki", 1, 600, R.drawable.amala));
-        foodItems.add(new FoodItem("Calamari", 1, 700, R.mipmap.ic_launcher_round));
+        foodItems.add(new FoodItem("Calamari", 1, 700, R.drawable.resturant));
         foodItems.add(new FoodItem("BBQ Fish", 1, 1500, R.drawable.amala));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
@@ -70,9 +70,6 @@ public class CategorySixActivity extends AppCompatActivity {
                     intent.putExtra("foodPic", imageId);
                 }
                 startActivity(intent);
-
-                Toast.makeText(getApplicationContext(), "Item Clicked"+currentItem.getItemName(), Toast.LENGTH_SHORT).show();
-
             }
         });
 

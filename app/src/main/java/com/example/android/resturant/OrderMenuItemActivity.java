@@ -1,9 +1,6 @@
 package com.example.android.resturant;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,12 +10,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.ByteArrayOutputStream;
-
-import static android.R.attr.name;
-import static android.R.attr.value;
-import static android.R.id.message;
 
 public class OrderMenuItemActivity extends AppCompatActivity {
 
@@ -75,6 +66,7 @@ public class OrderMenuItemActivity extends AppCompatActivity {
                 intent.putExtra("itemPrice", itemPrice);
                 intent.putExtra("itemCategory", itemCategory);
                 intent.putExtra("foodpic", foodPic);
+                intent.putExtra("quantity", quantity);
 
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Add to Order button clicked", Toast.LENGTH_SHORT).show();

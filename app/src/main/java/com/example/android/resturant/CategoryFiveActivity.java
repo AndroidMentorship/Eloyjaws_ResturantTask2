@@ -63,10 +63,6 @@ public class CategoryFiveActivity extends AppCompatActivity {
                     intent.putExtra("foodPic", imageId);
                 }
                 startActivity(intent);
-
-                Toast.makeText(getApplicationContext(), "Item Clicked"+currentItem.getItemName(), Toast.LENGTH_SHORT).show();
-
-
             }
         });
 
