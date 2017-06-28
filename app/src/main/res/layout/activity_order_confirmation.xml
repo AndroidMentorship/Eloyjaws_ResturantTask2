@@ -19,6 +19,7 @@
             android:text="Order Successful."
             android:textSize="32sp"
             android:gravity="center_vertical"
+            android:textColor="@color/textColorPrimary"
             android:layout_gravity="center_horizontal"
             />
 
@@ -27,6 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View Order"
+            android:padding="16dp"
+            android:background="@color/colorPrimary"
             android:layout_gravity="center_horizontal"/>
         <View
             android:layout_width="match_parent"

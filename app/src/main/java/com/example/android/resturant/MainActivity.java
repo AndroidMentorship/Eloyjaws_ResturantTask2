@@ -20,11 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ActionBar actionBar = getSupportActionBar();
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        actionBar.setTitle(getString(R.string.app_name));
-
         final TextView categoryOne = (TextView) findViewById(R.id.category_one);
         final TextView categoryTwo = (TextView) findViewById(R.id.category_two);
         final TextView categoryThree = (TextView) findViewById(R.id.category_three);

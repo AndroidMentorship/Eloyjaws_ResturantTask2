@@ -74,6 +74,7 @@
         android:elevation="4dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
         android:text="Login"/>
 
     <TextView

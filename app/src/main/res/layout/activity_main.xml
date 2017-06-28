@@ -26,7 +26,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF">
+            android:background="#EFEFEF">
 
             <TextView
                 android:id="@+id/category_two"
@@ -50,7 +50,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF">
+            android:background="#EFEFEF">
 
             <TextView
                 android:id="@+id/category_four"
@@ -74,7 +74,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF">
+            android:background="#EFEFEF">
 
             <TextView
                 android:id="@+id/category_six"

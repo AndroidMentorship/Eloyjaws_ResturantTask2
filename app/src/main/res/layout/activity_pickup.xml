@@ -18,6 +18,12 @@
         android:gravity="center_vertical"
         android:layout_gravity="center_horizontal"
         android:textAppearance="?android:textAppearanceLarge"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
     
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -71,5 +77,6 @@
         android:text="Yes"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="56dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"/>
 </LinearLayout>

@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
 
-    <!-- Primary color of the app (shown in the app bar) -->
-    <color name="primary_color">#4A312A</color>
+    <!--&lt;!&ndash; Primary color of the app (shown in the app bar) &ndash;&gt;-->
+    <!--<color name="primary_color">#4A312A</color>-->
 
-    <!-- Primary dark color of the app (shown in the status bar) -->
-    <color name="primary_dark_color">#2F1D1A</color>
+    <!--&lt;!&ndash; Primary dark color of the app (shown in the status bar) &ndash;&gt;-->
+    <!--<color name="primary_dark_color">#2F1D1A</color>-->
 
-    <!-- Background color for app -->
+     <!--Background color for app-->
     <color name="tan_background">#FFF7DA</color>
 
+    <color name="colorPrimary">#FFEB3B</color>
+    <color name="colorPrimaryDark">#FBC02D</color>
+    <color name="colorPrimaryLight">#FFF9C4</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!--<color name="colorPrimary">#9E9E9E</color>-->
+    <!--<color name="colorPrimaryDark">#616161</color>-->
+    <!--<color name="colorPrimaryLight">#F5F5F5</color>-->
+    <!--<color name="colorAccent">#FFEB3B</color>-->
+    <!--<color name="textColorPrimary">#212121</color>-->
+    <!--<color name="windowBackground">#F5F5F5</color>-->
+    <!--<color name="colorSecondaryText">#757575</color>-->
+    <!--<color name="icons">#212121</color>-->
+    <!--<color name="divider">#BDBDBD</color>-->
+
+
+    <!--<color name="colorPrimary">#03A9F4</color>-->
+    <!--<color name="colorPrimaryDark">#0288D1</color>-->
+    <!--<color name="colorPrimaryLight">#B3E5FC</color>-->
+    <!--<color name="colorAccent">#FFEB3B</color>-->
+    <!--<color name="textColorPrimary">#212121</color>-->
+    <!--<color name="textColorSecondary">#757575</color>-->
+    <!--<color name="icons">#FFFFFF</color>-->
+    <!--<color name="divider">#BDBDBD</color>-->
 </resources>

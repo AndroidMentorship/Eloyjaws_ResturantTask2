@@ -16,7 +16,7 @@
             android:id="@+id/food_image"
             android:layout_width="164dp"
             android:layout_height="164dp"
-            android:src="@mipmap/ic_launcher"
+            tools:src="@drawable/user3"
             android:layout_gravity="center_horizontal"/>
 
         <LinearLayout
@@ -75,6 +75,7 @@
                 android:onClick="decrement"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:background="@color/colorAccent"
                 android:text="-" />
 
             <TextView
@@ -92,6 +93,7 @@
                 android:onClick="increment"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:background="@color/colorAccent"
                 android:text="+" />
 
         </LinearLayout>
@@ -102,6 +104,8 @@
             android:layout_height="wrap_content"
             android:text="Add to Order Menu"
             android:textAllCaps="true"
+            android:padding="16dp"
+            android:background="@color/colorPrimary"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 </ScrollView>
