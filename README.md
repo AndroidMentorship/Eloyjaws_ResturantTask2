@@ -4,13 +4,12 @@ Hardcoded Implementation of the Restaurant App's Mockup
 ---
 
 ## Implemented Mockup
-![Restaurant Mockup image] [mockup]
+![mockup]
 
 ---
 
 ## Activity Diagram
-![Activity Diagram Image] [activity]
-
+![activity]
 
 [activity]: ./activity.png
 [mockup]: ./mockup.png
