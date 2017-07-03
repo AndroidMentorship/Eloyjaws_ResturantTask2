@@ -33,10 +33,10 @@ public class CategoryThreeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Fries", 3, 400, R.drawable.amala));
-        foodItems.add(new FoodItem("Ham Burger", 3, 1700, R.drawable.amala));
-        foodItems.add(new FoodItem("Crispy Chicken", 3, 550, R.drawable.amala));
-        foodItems.add(new FoodItem("Frank Rolls", 3, 200, R.drawable.amala));
+        foodItems.add(new FoodItem("Fries", 3, 400, R.drawable.fries));
+        foodItems.add(new FoodItem("Ham Burger", 3, 1700, R.drawable.burger));
+        foodItems.add(new FoodItem("Crispy Chicken", 3, 550, R.drawable.crispy_chicken));
+        foodItems.add(new FoodItem("Frank Rolls", 3, 200, R.drawable.frank_rolls));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 

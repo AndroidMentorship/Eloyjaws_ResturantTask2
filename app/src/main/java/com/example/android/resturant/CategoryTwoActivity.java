@@ -32,11 +32,11 @@ public class CategoryTwoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Jollof Rice", 2, 200, R.drawable.amala));
-        foodItems.add(new FoodItem("Fried Rice", 2, 200, R.drawable.amala));
-        foodItems.add(new FoodItem("Coconut Rice", 2, 500, R.drawable.amala));
-        foodItems.add(new FoodItem("White Rice", 2, 100, R.drawable.amala));
-        foodItems.add(new FoodItem("Rice Balls", 2, 50, R.drawable.amala));
+        foodItems.add(new FoodItem("Jollof Rice", 2, 200, R.drawable.jollof));
+        foodItems.add(new FoodItem("Fried Rice", 2, 200, R.drawable.fried_rice));
+        foodItems.add(new FoodItem("Coconut Rice", 2, 500, R.drawable.coconut_rice));
+        foodItems.add(new FoodItem("White Rice", 2, 100, R.drawable.white_rice));
+        foodItems.add(new FoodItem("Rice Balls", 2, 50, R.drawable.rice_balls));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 

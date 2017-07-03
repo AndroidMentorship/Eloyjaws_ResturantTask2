@@ -32,11 +32,11 @@ public class CategoryFiveActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Donuts", 4, 100, R.drawable.amala));
-        foodItems.add(new FoodItem("Sausage Rolls", 4, 150, R.drawable.amala));
-        foodItems.add(new FoodItem("Cakes", 4, 400, R.drawable.amala));
-        foodItems.add(new FoodItem("Meat Pies", 4, 250, R.drawable.amala));
-        foodItems.add(new FoodItem("Ice Cream", 4, 500, R.drawable.amala));
+        foodItems.add(new FoodItem("Donuts", 4, 100, R.drawable.donut));
+        foodItems.add(new FoodItem("Sausage Rolls", 4, 150, R.drawable.sausage_roll));
+        foodItems.add(new FoodItem("Cakes", 4, 400, R.drawable.cake));
+        foodItems.add(new FoodItem("Meat Pies", 4, 250, R.drawable.meat_pies));
+        foodItems.add(new FoodItem("Ice Cream", 4, 500, R.drawable.icecream));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 

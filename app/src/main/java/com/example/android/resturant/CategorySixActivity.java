@@ -41,9 +41,9 @@ public class CategorySixActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Takoyaki", 1, 600, R.drawable.amala));
-        foodItems.add(new FoodItem("Calamari", 1, 700, R.drawable.resturant));
-        foodItems.add(new FoodItem("BBQ Fish", 1, 1500, R.drawable.amala));
+        foodItems.add(new FoodItem("Takoyaki", 1, 600, R.drawable.takoyaki));
+        foodItems.add(new FoodItem("Calamari", 1, 700, R.drawable.calamari));
+        foodItems.add(new FoodItem("BBQ Fish", 1, 1500, R.drawable.bbq_fish));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 

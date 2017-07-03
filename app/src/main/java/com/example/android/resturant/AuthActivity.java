@@ -33,7 +33,7 @@ public class AuthActivity extends AppCompatActivity {
                         password.setError("This field needs to be filled");
                     }
                 } else {
-                    Intent intent = new Intent(AuthActivity.this, MainActivity.class);
+                    Intent intent = new Intent(AuthActivity.this, ViewOrderSummaryActivity.class);
                     startActivity(intent);
                     Snackbar.make(view, "Login Successful", Snackbar.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();

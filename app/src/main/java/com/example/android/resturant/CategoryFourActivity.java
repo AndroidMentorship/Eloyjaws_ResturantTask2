@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -32,10 +31,10 @@ public class CategoryFourActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Soft Drinks", 4, 100, R.drawable.amala));
-        foodItems.add(new FoodItem("Tetra-pak Drinks", 4, 250, R.drawable.amala));
-        foodItems.add(new FoodItem("Energy Drinks", 4, 350, R.drawable.amala));
-        foodItems.add(new FoodItem("Crushers", 4, 500, R.drawable.amala));
+        foodItems.add(new FoodItem("Soft Drinks", 4, 100, R.drawable.soft_drinks));
+        foodItems.add(new FoodItem("CHi Tetra-pak Drinks", 4, 250, R.drawable.tetra_pak));
+        foodItems.add(new FoodItem("Energy Drinks", 4, 350, R.drawable.energy));
+        foodItems.add(new FoodItem("krushers", 4, 500, R.drawable.krushers2));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 

@@ -43,9 +43,9 @@ public class CategoryOneActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<FoodItem> foodItems = new ArrayList<FoodItem>();
-        foodItems.add(new FoodItem("Amala", 1, 100, R.drawable.amala));
-        foodItems.add(new FoodItem("semo", 1, 200, R.mipmap.ic_launcher_round));
-        foodItems.add(new FoodItem("Pounded Yam", 1, 500, R.drawable.amala));
+        foodItems.add(new FoodItem("Amala", 1, 100, R.drawable.amalaa));
+        foodItems.add(new FoodItem("semo", 1, 200, R.drawable.semo));
+        foodItems.add(new FoodItem("Pounded Yam", 1, 500, R.drawable.poyam));
 
         FoodItemAdapter adapter = new FoodItemAdapter(this, foodItems);
 
